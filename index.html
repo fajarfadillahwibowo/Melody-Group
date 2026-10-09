@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melody Group – Membangun Masa Depan Bersama</title>
+  <meta name="description" content="Melody Group adalah holding company yang menaungi PT Cahaya Bumi Musi, PT Putra Balkom Raya, PT Mulia Elpiji Sejahtera, PT Putra Balkom Jaya, PT Balsri Lengis Perkasa, dan PT Sriwijaya Transporter Energi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo"><img src="logo.png" alt="Melody Group" /></div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="Melody Group Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Melody <strong>Group</strong></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#tentang" class="nav-link">Tentang</a></li>
+        <li><a href="#anak-perusahaan" class="nav-link">Perusahaan</a></li>
+        <li><a href="#values" class="nav-link">Nilai Kami</a></li>
+        <li><a href="#stats" class="nav-link">Prestasi</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+      <button class="nav-cta" onclick="scrollToSection('kontak')">Hubungi Kami</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down">
+        <span class="badge-dot"></span>
+        Grup Perusahaan Terpercaya
+      </div>
+      <h1 class="hero-title" data-aos="fade-up">
+        Membangun Masa Depan<br />
+        <span class="gradient-text">Dalam Satu Harmoni</span>
+      </h1>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
+        Melody Group adalah holding company yang menaungi portofolio bisnis unggulan.
+        Kami menggerakkan pertumbuhan, mendorong inovasi, dan menciptakan nilai
+        jangka panjang untuk semua pemangku kepentingan.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+        <button class="btn-primary" onclick="scrollToSection('anak-perusahaan')">
+          <span>Lihat Perusahaan</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="btn-ghost" onclick="scrollToSection('tentang')">
+          <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><polygon points="10,8 16,12 10,16" fill="currentColor"/></svg>
+          Pelajari Lebih
+        </button>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="6">0</span>
+          <span class="hero-stat-label">Anak Perusahaan</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="15">0</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-label">Tahun Pengalaman</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="500">0</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-label">Karyawan</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+      <span>Scroll</span>
+      <div class="scroll-line"><span></span></div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="section-tentang">
+    <div class="container">
+      <div class="tentang-grid">
+        <div class="tentang-visual" data-aos="fade-right">
+          <div class="visual-card main-card">
+            <div class="visual-logo-wrap">
+              <img src="logo.png" alt="Melody Group" class="visual-logo" />
+            </div>
+            <h3>Melody Group</h3>
+            <p>Holding Company</p>
+          </div>
+          <div class="visual-card accent-card accent-1" data-aos="zoom-in" data-aos-delay="200">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>Diversifikasi Bisnis</span>
+          </div>
+          <div class="visual-card accent-card accent-2" data-aos="zoom-in" data-aos-delay="300">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Tim Profesional</span>
+          </div>
+          <div class="visual-deco-ring"></div>
+        </div>
+        <div class="tentang-text" data-aos="fade-left">
+          <div class="section-badge">Tentang Kami</div>
+          <h2 class="section-title">Satu Grup,<br /><span class="gradient-text">Banyak Kekuatan</span></h2>
+          <p class="section-desc">
+            Melody Group berdiri sebagai perusahaan induk yang menyatukan kekuatan
+            berbagai entitas bisnis di bawah satu visi besar: pertumbuhan yang
+            berkelanjutan dan berdampak nyata bagi masyarakat.
+          </p>
+          <p class="section-desc">
+            Dengan portofolio yang beragam di sektor industri, perdagangan, dan jasa,
+            Melody Group terus berkomitmen untuk menghadirkan solusi terbaik melalui
+            sinergi antar anak perusahaan.
+          </p>
+          <div class="tentang-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <strong>Pertumbuhan Berkelanjutan</strong>
+                <p>Strategi bisnis jangka panjang yang terukur dan adaptif.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <strong>Tata Kelola Baik</strong>
+                <p>GCG diterapkan di seluruh lini bisnis secara konsisten.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <strong>Jangkauan Luas</strong>
+                <p>Beroperasi di berbagai wilayah strategis Indonesia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANAK PERUSAHAAN -->
+  <section id="anak-perusahaan" class="section-subsidiaries">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-badge">Portofolio Bisnis</div>
+        <h2 class="section-title">Anak Perusahaan<br /><span class="gradient-text">Melody Group</span></h2>
+        <p class="section-subtitle">Enam pilar kekuatan yang memperkokoh ekosistem bisnis Melody Group</p>
+      </div>
+      <div class="subsidiaries-grid">
+        <!-- 01. PT. CAHAYA BUMI MUSI -->
+        <div class="subsidiary-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-header">
+            <div class="card-icon card-icon-img">
+              <img src="logo-cbm.png" alt="Logo PT. Cahaya Bumi Musi" class="company-logo-img" />
+            </div>
+            <div class="card-number">01</div>
+          </div>
+          <h3 class="card-title">PT. CAHAYA BUMI MUSI</h3>
+          <p class="card-desc">Agen resmi distribusi Elpiji (LPG) untuk wilayah Kabupaten OKU Timur dan sekitarnya, berkomitmen menjamin ketersediaan dan kestabilan pasokan energi gas yang aman bagi masyarakat.</p>
+          <div class="card-tags">
+            <span>Agen Elpiji</span><span>Kab. OKU Timur</span><span>Energi Gas</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-status"><span class="status-dot"></span>Aktif Beroperasi</div>
+            <button class="card-link" aria-label="Selengkapnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 02. PT. PUTRA BALKOM RAYA -->
+        <div class="subsidiary-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="card-header">
+            <div class="card-icon card-icon-img">
+              <img src="logo-pbr.png" alt="Logo PT. Putra Balkom Raya" class="company-logo-img" />
+            </div>
+            <div class="card-number">02</div>
+          </div>
+          <h3 class="card-title">PT. PUTRA BALKOM RAYA</h3>
+          <p class="card-desc">Bergerak di bidang keagenan dan distribusi resmi Elpiji (LPG) serta transportasi logistik energi untuk wilayah OKU Selatan dan sekitarnya, memastikan ketersediaan energi gas aman dan merata.</p>
+          <div class="card-tags">
+            <span>Distribusi Elpiji</span><span>OKU Selatan</span><span>Logistik Energi</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-status"><span class="status-dot"></span>Aktif Beroperasi</div>
+            <button class="card-link" aria-label="Selengkapnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 03. PT. MULIA ELPIJI SEJAHTERA -->
+        <div class="subsidiary-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="card-header">
+            <div class="card-icon card-icon-img">
+              <img src="logo-mes.png" alt="Logo PT. Mulia Elpiji Sejahtera" class="company-logo-img" />
+            </div>
+            <div class="card-number">03</div>
+          </div>
+          <h3 class="card-title">PT. MULIA ELPIJI SEJAHTERA</h3>
+          <p class="card-desc">Fokus pada keagenan dan distribusi resmi Liquefied Petroleum Gas (LPG/Elpiji), menjamin pasokan energi gas rumah tangga maupun komersial secara andal dan tepat waktu.</p>
+          <div class="card-tags">
+            <span>Keagenan LPG</span><span>Distribusi Gas</span><span>Energi Domestik</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-status"><span class="status-dot"></span>Aktif Beroperasi</div>
+            <button class="card-link" aria-label="Selengkapnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 04. PT. PUTRA BALKOM JAYA -->
+        <div class="subsidiary-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-header">
+            <div class="card-icon card-icon-img">
+              <img src="logo-pbj.png" alt="Logo PT. Putra Balkom Jaya" class="company-logo-img" />
+            </div>
+            <div class="card-number">04</div>
+          </div>
+          <h3 class="card-title">PT. PUTRA BALKOM JAYA</h3>
+          <p class="card-desc">Bergerak sebagai kontraktor umum (general contractor) dan distributor terpercaya, menghadirkan layanan konstruksi berkualitas serta solusi distribusi material dan rantai pasok terintegrasi.</p>
+          <div class="card-tags">
+            <span>General Contractor</span><span>Distributor</span><span>Konstruksi</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-status"><span class="status-dot"></span>Aktif Beroperasi</div>
+            <button class="card-link" aria-label="Selengkapnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 05. PT. BALSRI LENGIS PERKASA -->
+        <div class="subsidiary-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="card-header">
+            <div class="card-icon card-icon-img">
+              <img src="logo-balsri.png" alt="Logo PT. Balsri Lengis Perkasa" class="company-logo-img" />
+            </div>
+            <div class="card-number">05</div>
+          </div>
+          <h3 class="card-title">PT. BALSRI LENGIS PERKASA</h3>
+          <p class="card-desc">Mitra terpercaya di bidang angkutan dan logistik khusus bahan bakar minyak dan gas (Balsri), mengedepankan kepatuhan standar HSE (K3) dan ketepatan operasional.</p>
+          <div class="card-tags">
+            <span>Angkutan BBM/Gas</span><span>Logistik Khusus</span><span>HSE K3</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-status"><span class="status-dot"></span>Aktif Beroperasi</div>
+            <button class="card-link" aria-label="Selengkapnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 06. PT. SRIWIJAYA TRANSPORTER ENERGI -->
+        <div class="subsidiary-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="card-header">
+            <div class="card-icon card-icon-img">
+              <img src="logo-ste.png" alt="Logo PT. Sriwijaya Transporter Energi" class="company-logo-img" />
+            </div>
+            <div class="card-number">06</div>
+          </div>
+          <h3 class="card-title">PT. SRIWIJAYA TRANSPORTER ENERGI</h3>
+          <p class="card-desc">Penyedia armada angkutan dan logistik transportasi energi darat yang tangguh di koridor Sumatera, mendukung kelancaran distribusi bahan bakar dan komoditas industri strategis.</p>
+          <div class="card-tags">
+            <span>Transporter Energi</span><span>Angkutan Tangki</span><span>Logistik Sumatera</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-status"><span class="status-dot"></span>Aktif Beroperasi</div>
+            <button class="card-link" aria-label="Selengkapnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NILAI -->
+  <section id="values" class="section-values">
+    <div class="values-bg"><div class="values-orb"></div></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-badge">DNA Perusahaan</div>
+        <h2 class="section-title">Nilai-Nilai<br /><span class="gradient-text">Yang Kami Pegang</span></h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="value-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Integritas</h4>
+          <p>Kami menjalankan bisnis dengan kejujuran dan transparansi sebagai fondasi utama.</p>
+        </div>
+        <div class="value-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="value-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>Keunggulan</h4>
+          <p>Setiap aspek pekerjaan kami dijalankan dengan standar kualitas tertinggi.</p>
+        </div>
+        <div class="value-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="value-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Kolaborasi</h4>
+          <p>Sinergi antar anak perusahaan menciptakan kekuatan yang lebih besar dari sekadar jumlahnya.</p>
+        </div>
+        <div class="value-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="value-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h4>Kepuasan Pelanggan</h4>
+          <p>Keberhasilan klien adalah keberhasilan kami. Setiap keputusan berorientasi pada nilai pelanggan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="section-stats">
+    <div class="container">
+      <div class="stats-wrapper" data-aos="fade-up">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="6">0</span></div>
+          <div class="stat-label">Anak Perusahaan</div>
+          <div class="stat-desc">Di bawah satu holding</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="15">0</span><span>+</span></div>
+          <div class="stat-label">Tahun Pengalaman</div>
+          <div class="stat-desc">Dalam dunia bisnis Indonesia</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="500">0</span><span>+</span></div>
+          <div class="stat-label">Tenaga Ahli</div>
+          <div class="stat-desc">Profesional berpengalaman</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="12">0</span></div>
+          <div class="stat-label">Provinsi</div>
+          <div class="stat-desc">Jangkauan operasional</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section-timeline">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-badge">Perjalanan Kami</div>
+        <h2 class="section-title">Tonggak <span class="gradient-text">Sejarah</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Fase I</span>
+            <h4>Pendirian Melody Group</h4>
+            <p>Melody Group resmi berdiri sebagai holding company dengan visi membangun ekosistem bisnis yang kuat dan terintegrasi.</p>
+          </div>
+        </div>
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Fase II</span>
+            <h4>Ekspansi PT Putra Balkom Jaya</h4>
+            <p>PT Putra Balkom Jaya memperluas jaringan konstruksi, perdagangan, dan distribusi ke berbagai wilayah strategis.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Fase III</span>
+            <h4>Lahirnya PT. Balsri Lengis Perkasa</h4>
+            <p>PT. Balsri Lengis Perkasa didirikan untuk memperkuat keandalan armada distribusi dan logistik bahan bakar khusus.</p>
+          </div>
+        </div>
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Fase IV</span>
+            <h4>PT. Cahaya Bumi Musi Bergabung</h4>
+            <p>PT. Cahaya Bumi Musi hadir memperkokoh lini bisnis energi dan keagenan distribusi resmi Elpiji strategis.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Fase V</span>
+            <h4>Sinergi 6 Pilar Perusahaan</h4>
+            <p>Melody Group menyatukan 6 entitas perusahaan utama di bidang energi, logistik, dan industri dalam satu ekosistem yang terintegrasi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="section-kontak">
+    <div class="kontak-bg">
+      <div class="kontak-orb orb-a"></div>
+      <div class="kontak-orb orb-b"></div>
+    </div>
+    <div class="container">
+      <div class="kontak-grid">
+        <div class="kontak-info" data-aos="fade-right">
+          <div class="section-badge">Hubungi Kami</div>
+          <h2 class="section-title">Mari <span class="gradient-text">Berkolaborasi</span></h2>
+          <p class="section-desc">Kami terbuka untuk berbagai peluang kolaborasi, kemitraan strategis, dan diskusi bisnis. Hubungi kami dan tim kami siap memberikan respons terbaik.</p>
+          <div class="kontak-details">
+            <div class="kontak-item">
+              <a href="https://maps.app.goo.gl/kUDJUEVnF8iBpZTY6?g_st=iw" target="_blank" rel="noopener noreferrer" class="kontak-icon" title="Buka di Google Maps" aria-label="Buka di Google Maps">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </a>
+              <div>
+                <strong>Alamat Kantor</strong>
+                <a href="https://maps.app.goo.gl/kUDJUEVnF8iBpZTY6?g_st=iw" target="_blank" rel="noopener noreferrer" class="kontak-map-link" title="Buka di Google Maps">Desa Suka Maju Kec. Buay Madang Timur, Kab. OKU Timur, Sumatera Selatan</a>
+              </div>
+            </div>
+            <div class="kontak-item">
+              <div class="kontak-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.8a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.96-1.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 17z"/></svg>
+              </div>
+              <div>
+                <strong>Telepon</strong>
+                <span>+62 21 1234 5678</span>
+              </div>
+            </div>
+            <div class="kontak-item">
+              <div class="kontak-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>info@melodygroup.co.id</span>
+              </div>
+            </div>
+            <div class="kontak-item">
+              <div class="kontak-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/melodi_grup123?exln=emVrZ29wbWJnNGN3" target="_blank" rel="noopener noreferrer" class="kontak-ig-link">@melodi_grup123</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kontak-form-wrap" data-aos="fade-left">
+          <form class="kontak-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="perusahaan">Perusahaan</label>
+              <input type="text" id="perusahaan" name="perusahaan" placeholder="Nama perusahaan Anda" />
+            </div>
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan tentang kebutuhan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Kirim Pesan</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Melody Group" />
+            <span>Melody <strong>Group</strong></span>
+          </div>
+          <p>Membangun masa depan bisnis Indonesia yang lebih kuat, lebih inovatif, dan lebih berdampak.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Perusahaan</h5>
+            <ul>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#values">Nilai Kami</a></li>
+              <li><a href="#stats">Prestasi</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Anak Perusahaan</h5>
+            <ul>
+              <li><a href="#anak-perusahaan">PT. Cahaya Bumi Musi</a></li>
+              <li><a href="#anak-perusahaan">PT. Putra Balkom Raya</a></li>
+              <li><a href="#anak-perusahaan">PT. Mulia Elpiji Sejahtera</a></li>
+              <li><a href="#anak-perusahaan">PT. Putra Balkom Jaya</a></li>
+              <li><a href="#anak-perusahaan">PT. Balsri Lengis Perkasa</a></li>
+              <li><a href="#anak-perusahaan">PT. Sriwijaya Transporter Energi</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Kontak</h5>
+            <ul>
+              <li><a href="mailto:info@melodygroup.co.id">Email Kami</a></li>
+              <li><a href="tel:+622112345678">Telepon</a></li>
+              <li><a href="https://maps.app.goo.gl/kUDJUEVnF8iBpZTY6?g_st=iw" target="_blank" rel="noopener noreferrer">Lokasi Kantor</a></li>
+              <li><a href="https://www.instagram.com/melodi_grup123?exln=emVrZ29wbWJnNGN3" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Melody Group. Seluruh hak cipta dilindungi.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/melodi_grup123?exln=emVrZ29wbWJnNGN3" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    Pesan berhasil dikirim!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
